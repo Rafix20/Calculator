@@ -30,7 +30,7 @@ public class Main {
         return Math.pow(a,b);
     }
 
-    public double root(){
+    public double square(){
         return Math.sqrt(a);
     }
 
