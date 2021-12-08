@@ -122,22 +122,23 @@ public class MainTest {
     @Test
     public void SquareRootOfFourShouldReturnTwo(){
         Main main = new Main(4);
-        assertEquals(2,main.root());
+        assertEquals(2,main.square());
     }
     @Test
     public void SquareRootOfMinusSevenShouldReturnError(){
         Main main = new Main(-7);
-        assertEquals("Error",main.root());
+        assertEquals("Error",main.square());
     }
     @Test
     public void SquareRootOfZeroShouldReturnZero(){
         Main main = new Main(0);
-        assertEquals(0,main.root());
+        assertEquals(0,main.square());
     }
     @Test
     public void SquareRootOfOneShouldReturnOne(){
         Main main = new Main(1);
-        assertEquals(1,main.root());
+        assertEquals(1,main.square());
     }
 
 }
+
