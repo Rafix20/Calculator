@@ -22,8 +22,13 @@ public class Main {
         return a * b;
     }
     //dzielenie
-    public int div() {
-        return a / b;
+    public Comparable<Integer> div(){
+        if(b==0 || a==0){
+            return null;
+        }
+        else{
+            return a / b;
+        }
     }
     //do potęgi
     public double power(){
@@ -35,5 +40,6 @@ public class Main {
     }
 
 }
+
 
 
