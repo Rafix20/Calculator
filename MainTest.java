@@ -1,9 +1,10 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class MainTest {
-    
+
     //dodawanie
     @Test
     public void TwoPlusTwoShouldReturnFour() {
@@ -80,9 +81,9 @@ public class MainTest {
         assertEquals(5, main.div());
     }
     @Test
-    public void SixDivideByZeroShouldReturnZero() {
+    public void SixDivideByZeroShouldReturnNothing() {
         Main main = new Main(6, 0);
-        assertEquals("Just Why", main.div());
+        assertNull(main.div());
     }
     @Test
     public void MinusTwoDivideByOneShouldReturnMinusTwo() {
@@ -142,5 +143,6 @@ public class MainTest {
     }
 
 }
+
 
 
