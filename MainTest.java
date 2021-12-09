@@ -108,9 +108,9 @@ public class MainTest {
         assertEquals(-64,main.power());
     }
     @Test
-    public void MinusThreeRaiseToMinusFourthPowerShouldReturnEightyOne(){
+    public void MinusThreeRaiseToMinusFourthPowerShouldReturnMinusZeroPointZeroOneRounded(){
         Main main = new Main(-3,-4);
-        assertEquals(81,main.power());
+        assertEquals(-0.01,main.power());
     }
     @Test
     public void EightRaiseToZeroPowerShouldReturnOne(){
