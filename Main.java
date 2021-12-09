@@ -30,8 +30,10 @@ public class Main {
         return Math.pow(a,b);
     }
     //z pierwiastka kwadratowego
-    public double square(){
+    public double squareroot(){
         return Math.sqrt(a);
     }
 
 }
+
+
