@@ -3,7 +3,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MainTest {
-
+    
+    //dodawanie
     @Test
     public void TwoPlusTwoShouldReturnFour() {
         Main main = new Main(2, 2);
@@ -26,7 +27,7 @@ public class MainTest {
     }
 
 
-
+    //odejmowanie
     @Test
     public void FourMinusThreeShouldReturnOne() {
         Main main = new Main(4, 3);
@@ -49,7 +50,7 @@ public class MainTest {
     }
 
 
-
+    //mnożenie
     @Test
     public void FiveMultiplyByThreeShouldReturnFifteen() {
         Main main = new Main(5, 3);
@@ -72,7 +73,7 @@ public class MainTest {
     }
 
 
-
+    //dzielenie
     @Test
     public void FifteenDivideByThreeShouldReturnFive() {
         Main main = new Main(15, 3);
@@ -81,7 +82,7 @@ public class MainTest {
     @Test
     public void SixDivideByZeroShouldReturnZero() {
         Main main = new Main(6, 0);
-        assertEquals(0, main.div());
+        assertEquals("Just Why", main.div());
     }
     @Test
     public void MinusTwoDivideByOneShouldReturnMinusTwo() {
@@ -95,7 +96,7 @@ public class MainTest {
     }
 
 
-
+    //do potęgi
     @Test
     public void SixRaiseToSecondPowerShouldReturnThirtySix(){
         Main main = new Main(6,2);
@@ -118,27 +119,28 @@ public class MainTest {
     }
 
 
-
+    //z pierwiastka kwadratowego
     @Test
     public void SquareRootOfFourShouldReturnTwo(){
         Main main = new Main(4);
-        assertEquals(2,main.square());
+        assertEquals(2,main.squareroot());
     }
     @Test
     public void SquareRootOfMinusSevenShouldReturnError(){
         Main main = new Main(-7);
-        assertEquals("Error",main.square());
+        assertEquals("Error",main.squareroot());
     }
     @Test
     public void SquareRootOfZeroShouldReturnZero(){
         Main main = new Main(0);
-        assertEquals(0,main.square());
+        assertEquals(0,main.squareroot());
     }
     @Test
     public void SquareRootOfOneShouldReturnOne(){
         Main main = new Main(1);
-        assertEquals(1,main.square());
+        assertEquals(1,main.squareroot());
     }
 
 }
+
 
